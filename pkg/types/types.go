@@ -3,6 +3,9 @@ package types
 // Money represents amount of money in minimum units e.g. dirams, cents, pennies
 type Money int64
 
+// Category represents the category of the payment made e.g. restaurants, auto, pharmacy
+type Category string
+
 // Currency represents the currency code, e.g. "TJS", "GBP", "USD"
 type Currency string
 
