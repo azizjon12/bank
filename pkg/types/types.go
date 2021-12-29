@@ -27,3 +27,10 @@ type Card struct {
 	Active     bool
 	MinBalance Money
 }
+
+// Payment represents payment information
+type Payment struct {
+	ID       int
+	Amount   Money
+	Category Category
+}
