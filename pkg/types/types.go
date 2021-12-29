@@ -6,6 +6,16 @@ type Money int64
 // Category represents the category of the payment made e.g. restaurants, auto, pharmacy
 type Category string
 
+// Status represents the status of the payment
+type Status string
+
+// Statuses for the payments
+const (
+	StatusOk         Status = "OK"
+	StatusFail       Status = "FAIL"
+	StatusInProgress Status = "INPROGRESS"
+)
+
 // Currency represents the currency code, e.g. "TJS", "GBP", "USD"
 type Currency string
 
@@ -36,4 +46,5 @@ type Payment struct {
 	ID       int
 	Amount   Money
 	Category Category
+	Status   Status
 }
